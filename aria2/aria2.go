@@ -98,7 +98,7 @@ func (a *Aria2) TellCompleted(offset, num int, keys []string) (res []*client.Sta
 	return result, err
 }
 
-func (a *Aria2) GetDownloads(queue string) int {
+func (a *Aria2) GetDownloadCount(queue string) int {
 	var data []*client.StatusInfo
 	switch queue {
 	case "active":
